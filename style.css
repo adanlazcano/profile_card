@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    /*hsl(hue, saturation, lightness)*/
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-gray: hsl(227, 10%, 46%);
+    --neutral-gray: hsl(0, 0%, 59%);
+    --font-family: 'Kumbh Sans', sans-serif;
+    --font-size: 18px;
+    --width-desktop: 1440px;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    background-color: var(--dark-cyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: bottom -100% left -80%, top -100% right -80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    /* width: var(--width-desktop);
+    overflow: hidden; */
+}
+
+.card {
+    background: white url('./images/bg-pattern-card.svg');
+    background-repeat: repeat no-repeat;
+    border-radius: 0.8rem;
+    text-align: center;
+    line-height: 22px;
+}
+
+.profile {
+    padding: 4.8rem 6rem 2rem 6rem;
+}
+
+.profile h3 {
+    padding-top: 5px;
+    line-height: 35px;
+}
+
+.card img {
+    border: 8px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card h3 span {
+    color: var(--neutral-gray);
+    font-weight: 300;
+}
+
+.card small {
+    color: var(--neutral-gray);
+}
+
+.card .social {
+    display: flex;
+    border-top: 1px solid #e8e8e8;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.card .social h4 small {
+    color: var(--neutral-gray);
+    line-height: 20px;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+}
