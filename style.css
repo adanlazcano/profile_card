@@ -55,6 +55,7 @@ body {
     border: 8px solid white;
     border-radius: 50%;
     object-fit: cover;
+    background: white;
 }
 
 .card h3 span {
